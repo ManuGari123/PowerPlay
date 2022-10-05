@@ -32,7 +32,7 @@ public class LocalizationTest extends LinearOpMode {
                             -gamepad1.right_stick_x
                     )
             );
-//testing
+
             drive.update();
 
             Pose2d poseEstimate = drive.getPoseEstimate();
