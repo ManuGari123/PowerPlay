@@ -99,16 +99,16 @@ public class DistanceSensorControlTest extends LinearOpMode {
             //Middle Pole Code
             if (gamepad2.b) {
                 if (BottomDistance > 21) {
-                    ArmHeight.setPower(0.2);
-                } else if (BottomDistance < 19) {
                     ArmHeight.setPower(-0.2);
+                } else if (BottomDistance < 19) {
+                    ArmHeight.setPower(+0.2);
                 } else if (BottomDistance <= 31 && BottomDistance >= 29) {
                     //Add Dropper Code for Middle Level Here
                 }
             }
 
             //Bottom Code Code
-            if (gamepad2.a) {
+            if (gamepad2.x) {
                 if (BottomDistance > 11) {
                     ArmHeight.setPower(0.2);
                 } else if (BottomDistance < 9) {
@@ -117,9 +117,6 @@ public class DistanceSensorControlTest extends LinearOpMode {
                     //Add Dropper Code for Bottom Level Here
                 }
             }
-
-
-
         }
     }
 }
